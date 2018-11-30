@@ -1,9 +1,7 @@
 ![showKs logo](./images/showKs_logo.png)
-
-# showKsとは
   
-  
-## 趣旨
+   
+# showKsとは ｜ 趣旨
 
 日本最大級のコンテナ関連技術カンファレンスである[JapanContainerDays](http://containerdays.jp/)（通称”JKD”）。そこにはコンテナ技術に興味がある、あるいはコンテナ技術を愛している、ひょっとするとコンテナ技術ってよく分からない・・・なんて人も含め、本当に様々な人がたくさん集まります。
 
@@ -23,7 +21,7 @@ JKDのスタッフミーティングで出たそんな発言をきっかけに�
 是非、あなたもドリームチームに参加して、クラウドネイティブな開発を体験してください。  
   
   
-## showKsの構成概要
+# showKs構成
 
 showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます。
 
@@ -31,9 +29,9 @@ JKD v1812におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のク
 
 また、showksで使用しているコードや設定ファイル、ドキュメント等は[Github](https://github.com/containerdaysjp)上で公開されていますので、どなたでもご自分で同じ環境を作り上げることが可能です。
 
-![architecture simple](./images/architecture_simple.png)
+## showKsの参加および開発体験の流れ
 
-上図の流れは、おおよそ以下の通りです。
+![architecture simple](./images/architecture_simple.png)
 
 1. [登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)からユーザ登録
 2. あなた専用のGithubリポジトリが自動作成
@@ -47,11 +45,9 @@ JKD v1812におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のク
 詳細な手順はこちらの[参加手順](#showKsへの参加方法)をご確認ください。
   
   
-# showKs Canvasアプリ
+## showKs Canvasアプリ
 
 ![showks-canvas](./images/showks-canvas-sample.png)
-
-## 特徴
 
 [Node.js](https://nodejs.org/)および[Socket.io](https://socket.io)を用いたお絵かきアプリです。[Socket.IO Collaborative Whiteboard](https://github.com/socketio/socket.io/tree/master/examples/whiteboard)をベースに作成されています。
 
@@ -66,7 +62,7 @@ JKD v1812におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のク
 showKs Canvasアプリのリポジトリは[こちら](https://github.com/containerdaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリからForkされたあなた専用のリポジトリが自動的に作成されます。
   
   
-## ポータルについて
+## showKs portal
 
 ![showks-portal](./images/showks-portal-sample.png)
 
@@ -78,7 +74,7 @@ showKs参加者がそれぞれデプロイしたアプリコンテナから、�
  - [production環境用のポータル](http://portal.prod.showks.containerdays.jp)
   
   
-## 注意事項
+# 注意事項
 
 showKsの参加に際して、次の事項を遵守頂きますようご協力をお願いします。
 
@@ -93,10 +89,10 @@ showKsの参加に際して、次の事項を遵守頂きますようご協力�
 showKsへの参加手順は、[こちら](./howToJoin.md)をご参照ください。  
   
   
-# ドキュメントリンク
+# ドキュメント
 
 showKsで利用しているコンポーネントに関する情報は、次のドキュメントリポジトリに随時集約されます。
 
-[showKs-doc](https://github.com/containerdaysjp/showks-docs)
+- [showKs-docs](https://github.com/containerdaysjp/showks-docs)
 
 
