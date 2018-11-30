@@ -25,7 +25,7 @@ JKDのスタッフミーティングで出たそんな発言をきっかけに�
 
 showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます。
 
-JKD v1812におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のクラスターを[Google Cloud Platdform](https://cloud.google.com)上で構成し、[Concourse](https://concourse-ci.org)や[Spinnaker](https://www.spinnaker.io)などのCI/CDツールによりパイプライン管理をすることで、マイクロサービス化されたコンテナアプリをクラウドネイティブに開発するできるように構成されています。
+JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のクラスターを[Google Cloud Platdform](https://cloud.google.com)上で構成し、[Concourse](https://concourse-ci.org)や[Spinnaker](https://www.spinnaker.io)などのCI/CDツールによりパイプライン管理をすることで、マイクロサービス化されたコンテナアプリをクラウドネイティブに開発するできるように構成されています。
 
 また、showksで使用しているコードや設定ファイル、ドキュメント等は[Github](https://github.com/containerdaysjp)上で公開されていますので、どなたでもご自分で同じ環境を作り上げることが可能です。
 
@@ -33,7 +33,7 @@ JKD v1812におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のク
 
 ![architecture simple](./images/architecture_simple.png)
 
-1. [登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)からユーザ登録
+1. 登録フォームからユーザ登録
 2. あなた専用のGithubリポジトリが自動作成
 3. コードを変更してcommit
 4. staging環境へアプリコンテナが自動ビルド/デプロイ
@@ -94,5 +94,25 @@ showKsへの参加手順は、[こちら](./howToJoin.md)をご参照くださ�
 showKsで利用しているコンポーネントに関する情報は、次のドキュメントリポジトリに随時集約されます。
 
 - [showKs-docs](https://github.com/containerdaysjp/showks-docs)
+  
+  
+# 展示ブース
 
+JKD v18.12では、受付隣の1番ブースにおいてshowKsのデモ展示をしています。展示ブースでは次のようなConcourseやSpinnakerの管理者用ダッシュボードなどをご確認頂けます。
 
+![showks-concourse](./images/showks-concourse.png)
+![showks-spinnaker](./images/showks-spinnaker.png)
+
+また、showKsに関しての質問も受け付けておりますので、なにかお聞きになりたいことがありましたらブース担当者までお気軽にお声がけください。
+
+# セッション
+
+JKD v18.12において、showKsに関するセッションを予定しています。showKsの舞台裏が気になる方は是非ご参加ください。
+
+ - 日時：　2018/12/05 (水) 15:40 - 16:20
+ - タイトル：　ユーザー参加型CI/CDの実験場「showKs」開発の舞台裏
+ - 登壇：　太田 航平、草間 一人、吉瀬 淳一
+
+# ハッシュタグ
+
+showKsに関しては `#containerdaysjp`と `#showKs` の2つのハッシュタグをついてのTweetにご協力をお願いします。
