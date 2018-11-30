@@ -14,6 +14,8 @@
 
 # showKsへの参加方法
 
+[こちら](./howToJoin.md)
+
 ## 1. 事前準備
 
 showKsの参加には[Github](https://github.com)のアカウントが必要です。必ず事前にGithubアカウントを作成し、ユーザ名を確認しておいてください。
