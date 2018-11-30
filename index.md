@@ -1,3 +1,5 @@
+[showKs logo](./images/showKs_color.png)
+
 # showKsとは
 
 ## 趣旨
