@@ -1,5 +1,7 @@
 ![showKs logo](./images/showKs_color.png)
 
+<img src="./images/showKs_color.png" alt="showKs logo" width=200>
+
 # showKsとは
 
 ## 趣旨
