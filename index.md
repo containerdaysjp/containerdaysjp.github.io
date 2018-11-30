@@ -27,8 +27,9 @@ JKDのスタッフミーティングで出たそんな発言をきっかけに�
 
 showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます。
 
-使用しているコードは全てg
-showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます
+JKD v1812におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のクラスターを[Google Cloud Platdform](https://cloud.google.com)上で構成し、[Concourse](https://concourse-ci.org)や[Spinnaker](https://www.spinnaker.io)などのCI/CDツールによりパイプライン管理をすることで、マイクロサービス化されたコンテナアプリをクラウドネイティブに開発するできるように構成されています。
+
+また、showksで使用しているコードや設定ファイル、ドキュメント等は[Github](https://github.com/containerdaysjp)上で公開されていますので、どなたでもご自分で同じ環境を作り上げることが可能です。
 
 ![architecture simple](./images/architecture_simple.png)
 
@@ -52,7 +53,7 @@ showKsでは、お絵かきアプリ[showks-canvas](https://github.com/container
 
 ## 特徴
 
-Node.jsおよびSocket.ioを用いたお絵かきアプリです。[Socket.IO Collaborative Whiteboard](https://github.com/socketio/socket.io/tree/master/examples/whiteboard)をベースに作成されています。
+[Node.js](https://nodejs.org/)および[Socket.io](https://socket.io)を用いたお絵かきアプリです。[Socket.IO Collaborative Whiteboard](https://github.com/socketio/socket.io/tree/master/examples/whiteboard)をベースに作成されています。
 
 このアプリケーションには次の機能が実装されています。
 
@@ -69,9 +70,9 @@ showKs Canvasアプリのリポジトリは[こちら](https://github.com/contai
 
 ![showks-portal](./images/showks-portal-sample.png)
 
-showKs参加者がそれぞれデプロイしたアプリコンテナから、ユーザプロフィールや画像データなどの情報を集約して表示するのが"showKs portal"です。このポータル画面から各canvasアプリに移動してお絵かきをすることも可能です。
+showKs参加者がそれぞれデプロイしたアプリコンテナから、ユーザプロフィールや画像データなどの情報を集約して表示するのが"showKs portal"です。このポータル画面から各canvasアプリに移動してお絵かきをすることも可能です。showKs portalは[Nuxt.js](https://nuxtjs.org)を利用して構成されています。
 
-showKsにはstaging（ステージング）とprodustion（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
+また、showKsにはstaging（ステージング）とprodustion（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
 
  - [staging環境用のポータル](http://portal.stg.showks.containerdays.jp)
  - [production環境用のポータル](http://portal.prod.showks.containerdays.jp)
@@ -79,7 +80,12 @@ showKsにはstaging（ステージング）とprodustion（本番）の2つの�
   
 ## 注意事項
 
+showKsの参加に際して、次の事項を遵守頂きますようご協力をお願いします。
 
+- showKsで公開しているコードや情報などを無断で商用利用しないでください。
+- Canvasアプリコンテナで公序良俗に反するコメントやイラストなどを表示させないでください。
+  - Canvasアプリはインターネットへ公開される点にご留意ください。
+  - [JKDのCode of Conduct（行動規範）](https://containerdays.jp/#event-slides)も併せてご一読ください。
   
   
 # showKsへの参加方法
@@ -89,7 +95,7 @@ showKsへの参加手順は、[こちら](./howToJoin.md)をご参照くださ�
   
 # ドキュメントリンク
 
-showKsでは、Kubernetes、
+showKsで利用しているコンポーネントに関する情報は、次のドキュメントリポジトリに随時集約されます。
 
 [showKs-doc](https://github.com/containerdaysjp/showks-docs)
 
