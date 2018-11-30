@@ -1,4 +1,4 @@
-![showKs logo](./images/showKs_color.png)
+![showKs logo](./images/showKs_logo.png)
 
 # showKsとは
 
