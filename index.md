@@ -1,7 +1,8 @@
 ![showKs logo](./images/showKs_logo.png)
 
 # showKsとは
-
+  
+  
 ## 趣旨
 
 日本最大級のコンテナ関連技術カンファレンスである[JapanContainerDays](http://containerdays.jp/)（通称”JKD”）。そこにはコンテナ技術に興味がある、あるいはコンテナ技術を愛している、ひょっとするとコンテナ技術ってよく分からない・・・なんて人も含め、本当に様々な人がたくさん集まります。
@@ -22,9 +23,12 @@ JKDのスタッフミーティングで出たそんな発言をきっかけに�
 是非、あなたもドリームチームに参加して、クラウドネイティブな開発を体験してください。  
   
   
-## showKs構成概要
+## showKsの構成概要
 
 showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます。
+
+使用しているコードは全てg
+showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます
 
 ![architecture simple](./images/architecture_simple.png)
 
@@ -40,24 +44,52 @@ showKsでは、お絵かきアプリ[showks-canvas](https://github.com/container
 8. ブラウザからCanvasアプリへアクセスし動作確認
 
 詳細な手順はこちらの[参加手順](#showKsへの参加方法)をご確認ください。
-
+  
+  
 # showKs Canvasアプリ
 
 ![showks-canvas](./images/showks-canvas-sample.png)
 
 ## 特徴
 
+Node.jsおよびSocket.ioを用いたお絵かきアプリです。[Socket.IO Collaborative Whiteboard](https://github.com/socketio/socket.io/tree/master/examples/whiteboard)をベースに作成されています。
+
+このアプリケーションには次の機能が実装されています。
+
+- Socket.io経由の複数ブラウザウィンドウ間におけるリアルタイム同期
+- ユーザプロフィール（各アカウントおよびコメント）の表示
+- 描写カラーの自由な選択
+- スマホ/タブレット端末ブラウザからの描写
+- 消しゴム機能
+
+showKs Canvasアプリのリポジトリは[こちら](https://github.com/containerdaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリからForkされたあなた専用のリポジトリが自動的に作成されます。
+  
+  
 ## ポータルについて
 
 ![showks-portal](./images/showks-portal-sample.png)
 
-## 制約
+showKs参加者がそれぞれデプロイしたアプリコンテナから、ユーザプロフィールや画像データなどの情報を集約して表示するのが"showKs portal"です。このポータル画面から各canvasアプリに移動してお絵かきをすることも可能です。
 
+showKsにはstaging（ステージング）とprodustion（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
+
+ - [staging環境用のポータル](http://portal.stg.showks.containerdays.jp)
+ - [production環境用のポータル](http://portal.prod.showks.containerdays.jp)
+  
+  
+## 注意事項
+
+
+  
+  
 # showKsへの参加方法
 
 showKsへの参加手順は、[こちら](./howToJoin.md)をご参照ください。  
-
+  
+  
 # ドキュメントリンク
+
+showKsでは、Kubernetes、
 
 [showKs-doc](https://github.com/containerdaysjp/showks-docs)
 
