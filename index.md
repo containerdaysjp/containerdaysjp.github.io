@@ -3,7 +3,7 @@
    
 # showKsとは ｜ 趣旨
 
-日本最大級のコンテナ関連技術カンファレンスである[JapanContainerDays](http://containerdays.jp/)（通称”JKD”）。
+日本最大級のコンテナ関連技術カンファレンスである[JapanContainerDays](https://containerdays.jp/)（通称”JKD”）。
 
 そこにはコンテナ技術に興味がある、あるいはコンテナ技術を愛している、もしくはコンテナ技術ってなんだかよく分からない・・・などなど、様々な人達がたくさん集まります。
 
@@ -73,8 +73,8 @@ showKs参加者がそれぞれデプロイしたアプリコンテナから、�
 
 また、showKsにはstaging（ステージング）とproduction（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
 
- - [staging環境用のポータル](http://portal.stg.showks.containerdays.jp)
- - [production環境用のポータル](http://portal.prod.showks.containerdays.jp)
+ - [staging環境用のポータル](https://portal.stg.showks.containerdays.jp)
+ - [production環境用のポータル](https://portal.prod.showks.containerdays.jp)
   
   
 # 注意事項
