@@ -1,12 +1,26 @@
 ![showKs logo](./images/showKs_logo.png)
 
-# showKsへの参加方法
+# showKsへの参加方法（簡易版）
+
+1. Githubアカウントを準備
+2. [登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)からユーザ登録
+3. あなた専用レポジトリ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名`）にアクセス
+4. 開発用ブランチ（例：`feature`ブランチ）の作成
+5. 開発用ブランチの`src/data/author.json`ファイル内にある`comment`の値を編集してcommit
+6. 開発用ブランチから`staging`ブランチへPull Request
+7. `staging`ブランチへのPull Requestをmerge
+8. [staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+9. `staging`ブランチから`master`ブランチへPull Request
+10. `master`ブランチへのPull Requestをmerge
+11. [production環境用のポータル画面](http://portal.prod.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+
+# showKsへの参加方法（詳細版）
 
 ## 1. 事前準備
 
 showKsの参加には[Github](https://github.com)のアカウントが必要です。必ず事前にGithubアカウントを作成し、ユーザ名を確認しておいてください。
 
-## 2. ユーザ名の登録
+## 2. ユーザ登録
 
 [Project一覧](http://form.stg.showks.containerdays.jp/projects/)ページにアクセスし、既存の`Username`を確認します。  
 
@@ -48,7 +62,7 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ![専用リポジトリの検索](./images/searchRepository.png)
 
-## 4. あなた専用リポジトリ内のブランチの確認
+## 4. あなた専用リポジトリ内へ開発用ブランチ作成
 
 あなた専用のリポジトリには、次のブランチが用意されています。
 
@@ -63,31 +77,15 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ![開発ブランチの追加](./images/createBranch.png)
 
-## 4. Staging環境のポータル画面にアクセス
+## 5. ソースコードの更新（開発用ブランチ）
 
-[staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)にアクセスします。
+下図を参考に作成した開発用ブランチに切り替わっていることを確認します（図では例として`feature`ブランチを使用）。
 
-このポータル画面では、staging環境にデプロイされたshowKs-canvasアプリコンテナからの情報が集約表示されます。
+![開発ブランチへの切り替え](./images/feartureBranch.png)
 
-showKsで事前に準備されているパイプライン管理から、ユーザ登録を契機にあなたのアプリコンテナが自動的にビルド/デプロイされます。
+開発用ブランチに切り替わったら、ファイルブラウザから `srcフォルダ` > `data`フォルダ > `author.json` の順にアクセスします。
 
-デプロイまでは少々のお時間が必要になりますので、表示がされない場合は暫く時間を空けてから再確認してください。
-
-デプロイされたshowKs-canvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間を置いた後にポータル画面にも反映されますので、挙動を確認してみてください。
-
-## 5. ソースコードの更新（stagingブランチ）
-
-あなた専用のリポジトリ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名`）にアクセスします。
-
-次の画像を参考に、Branchを`master`から`staging`に切り替えます（直接`https://github.com/containerdaysjp/showks-canvas-ユーザ名/tree/staging`にアクセスしても構いません）。
-
-![Image]()
-
-stagingブランチに切り替わったら、ファイルブラウザから `srcフォルダ` > `data`フォルダ > `author.json` の順にクリックします（直接`https://github.com/containerdaysjp/showks-canvas-ユーザ名/blob/staging/src/data/author.json`にアクセスしても構いません）。
-
-画面右側にある鉛筆マークをクリックし、`author.json`を直接編集します。
-
-ユーザ登録の際に入力された値がjson形式で埋め込まれていますので、`comment`の値だけを任意の文字列に置き換えてください。
+画面右側にある鉛筆マークをクリックし、`author.json`を直接編集します。ユーザ登録の際に入力された値がjson形式で埋め込まれていますので、`comment`の値だけを任意の文字列に置き換えてください。
 
 値を更新後、画面下部の`Commit changes`欄に適切なコメントを入力し、`Commit directly to the staging branch.`にチェックが入っていることを確認してから`Commit changes`ボタンをクリックします。
 
@@ -95,8 +93,25 @@ showKsで事前に準備されているパイプライン管理から、commit�
 
 **注意：`author.json`以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
 
-[staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)にアクセスし、ご自分のshowKs-canvasアプリコンテナが新しいものに置き換わることを確認します。
+## 6. 開発用ブランチから`staging`ブランチへPull Requestの発行
 
-デプロイまでは少々のお時間が必要になりますので、表示がされない場合は暫く時間を空けてから再確認してください。
+下図を参考に開発用ブランチのから`staging`ブランチへPull Requestを発行します。
 
-今回のアプリケーション仕様から、再デプロイされたアプリコンテナでは以前のお絵かきデータが引き継がれません。キャンバスが白紙に戻ることも確認します。
+
+## 7. `staging`ブランチへのPull Requestをmerge
+## 8. アプリ更新の確認（staging環境）
+
+
+[staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。
+デプロイまでは少々のお時間が必要になりますので、変更がされない場合は暫く時間を空けてから再確認してください。
+
+デプロイされたCanvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間後にポータル画面にも反映されますので、確認してみてください。
+
+## 9. `staging`ブランチから`master`ブランチへPull Requestの発行
+## 10. `master`ブランチへのPull Requestをmerge
+## 11. アプリ更新の確認（Production環境）
+
+
+[production環境用のポータル画面](http://portal.prod.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイまでは少々のお時間が必要になりますので、変更がされない場合は暫く時間を空けてから再確認してください。
+
+デプロイされたCanvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間後にポータル画面にも反映されますので、確認してみてください。
