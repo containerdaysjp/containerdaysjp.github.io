@@ -79,39 +79,59 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ## 5. ソースコードの更新（開発用ブランチ）
 
-下図を参考に作成した開発用ブランチに切り替わっていることを確認します（図では例として`feature`ブランチを使用）。
+作成した開発用ブランチ（図では例として`feature`ブランチを使用）に切り替わっていることを確認し、ファイルブラウザから `srcフォルダ` > `data`フォルダ > `author.json`ファイル の順にアクセスします。
 
-![開発ブランチへの切り替え](./images/feartureBranch.png)
+![ファイルブラウズ](./images/file_browse.png)
 
-開発用ブランチに切り替わったら、ファイルブラウザから `srcフォルダ` > `data`フォルダ > `author.json` の順にアクセスします。
+編集ボタンから`author.json`を編集します。ユーザ登録の際に入力した値がjson形式で埋め込まれていますので`comment`の値だけを任意の文字列に置き換えてください。
 
-画面右側にある鉛筆マークをクリックし、`author.json`を直接編集します。ユーザ登録の際に入力された値がjson形式で埋め込まれていますので、`comment`の値だけを任意の文字列に置き換えてください。
+![author.json編集](./images/edit_author_json.png)
 
 値を更新後、画面下部の`Commit changes`欄に適切なコメントを入力し、`Commit directly to the staging branch.`にチェックが入っていることを確認してから`Commit changes`ボタンをクリックします。
 
-showKsで事前に準備されているパイプライン管理から、commitを契機にあなたのアプリコンテナが自動的に再度ビルド/デプロイされます。
-
-**注意：`author.json`以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
+![commit](./images/commit.png)
 
 ## 6. 開発用ブランチから`staging`ブランチへPull Requestの発行
 
-下図を参考に開発用ブランチのから`staging`ブランチへPull Requestを発行します。
+開発用ブランチから`staging`ブランチへPull Requestを発行します。画面上部のタブから`Pull requests`を選択し`Compare & pull request`をクリックします。
 
+![pull requestの作成](./images/new_pull_request.png)
+
+Pull Requestの送信先が開発用ブランチから`staging`ブランチへなっていることを確認してから`Create pull request`ボタンをクリックします。
+
+![pull requestの発行](./images/create_pr.png)
 
 ## 7. `staging`ブランチへのPull Requestをmerge
+
+`staging`ブランチに開発ブランチからのPull Requestをmergeします。`Merge pull request`をクリックしてから、さらに`Confirm merge`をクリックしてmergeします。
+
+![Merge pull request1](./images/merge_pr1.png)
+
+![Merge_pull request2](./images/merge_pr2.png)
+
+showKsで事前に準備されているパイプライン管理から、mergeを契機にあなたのアプリコンテナが自動的にstaging環境へビルド/デプロイされます。
+
+**注意：`author.json`以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
+
 ## 8. アプリ更新の確認（staging環境）
 
-
-[staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。
-デプロイまでは少々のお時間が必要になりますので、変更がされない場合は暫く時間を空けてから再確認してください。
+[staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
 
 デプロイされたCanvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間後にポータル画面にも反映されますので、確認してみてください。
 
 ## 9. `staging`ブランチから`master`ブランチへPull Requestの発行
+
+手順 6. の内容と同様に、`staging`ブランチから`master`ブランチへPull Requestを発行します。
+
 ## 10. `master`ブランチへのPull Requestをmerge
+
+手順 7. の内容と同様に、`master`ブランチに`staging`ブランチからのPull Requestをmergeします。
+
+showKsで事前に準備されているパイプライン管理から、mergeを契機にあなたのアプリコンテナが自動的にproduction環境へビルド/デプロイされます。
+
+**注意：`author.json`以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
+
+
 ## 11. アプリ更新の確認（Production環境）
 
-
-[production環境用のポータル画面](http://portal.prod.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイまでは少々のお時間が必要になりますので、変更がされない場合は暫く時間を空けてから再確認してください。
-
-デプロイされたCanvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間後にポータル画面にも反映されますので、確認してみてください。
+[production環境用のポータル画面](http://portal.prod.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
