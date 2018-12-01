@@ -35,7 +35,9 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
     - 任意のメッセージを入力します。
     - このメッセージはお絵かきアプリに表示されます。
 
-入力が完了したら`Create Project`をクリックしてProjectを新規作成します。処理の完了までは暫く時間がかかります。画面が遷移し`Project was successfully create`の表示がでるまで待機してください。
+入力が完了したら`Create Project`をクリックしてProjectを新規作成します。
+
+処理の完了までは暫く時間がかかります。画面が遷移し`Project was successfully create`の表示がでるまで待機してください。
 
 ## 3. あなた専用リポジトリの確認
 
@@ -57,10 +59,9 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
     - production（本番）環境用のブランチです。
     - 直接commitはせずに、stagingブランチからPull Requestを発行してコードをmergeします。
 
-ここに開発用のブランチを追加します。今回は例として`feature`ブランチを新規作成します。
+ここに開発用のブランチを追加します。下図を参考に開発用ブランチを追加してください（今回は例として`feature`ブランチを新規作成します）。
 
-あなた専用レポジトリにアクセスし、下図を参考に開発用ブランチを追加してください。
-
+![開発ブランチの追加](./images/createBranch.png)
 
 ## 4. Staging環境のポータル画面にアクセス
 
