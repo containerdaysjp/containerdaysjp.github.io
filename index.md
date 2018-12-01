@@ -37,12 +37,13 @@ JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)の�
 
 1. 登録フォームからユーザ登録
 2. あなた専用のGithubリポジトリが自動作成
-3. コードを変更してcommit
-4. staging環境へアプリコンテナが自動ビルド/デプロイ
-5. ブラウザからCanvasアプリへアクセスし動作確認
-6. stagingブランチからmasterブランチへPullRequest/merge
-7. production環境へアプリコンテナが自動ビルド/デプロイ
-8. ブラウザからCanvasアプリへアクセスし動作確認
+3. コードを変更してfeatureブランチへcommit
+4. featureブランチからstagingブランチへPullRequest/merge
+5. staging環境へアプリコンテナが自動ビルド/デプロイ
+6. ブラウザからCanvasアプリへアクセスし動作確認
+7. stagingブランチからmasterブランチへPullRequest/merge
+8. production環境へアプリコンテナが自動ビルド/デプロイ
+9. ブラウザからCanvasアプリへアクセスし動作確認
 
 詳細な手順はこちらの[参加手順](#showKsへの参加方法)をご確認ください。
   
@@ -120,3 +121,5 @@ JKD v18.12において、showKsに関するセッションを予定していま�
 # ハッシュタグ
 
 showKsに関しては `#containerdaysjp`と `#showKs` の2つのハッシュタグをつけてのTweetにご協力をお願いします。
+たくさんの感想やご意見をお待ちしております。
+
