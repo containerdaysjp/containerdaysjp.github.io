@@ -123,3 +123,12 @@ JKD v18.12において、showKsに関するセッションを予定していま�
 showKsに関しては `#containerdaysjp`と `#showKs` の2つのハッシュタグをつけてのTweetにご協力をお願いします。
 たくさんの感想やご意見をお待ちしております。
 
+# チーム紹介
+
+ - [inductor](https://github.com/inductor)
+ - [jacopen](https://github.com/jacopen)
+ - [jyoshise](https://github.com/jyoshise)
+ - [kojiha](https://github.com/kojiha)
+ - [makocchi](https://github.com/makocchi-git)
+ - [MasayaAoyama](https://github.com/MasayaAoyama)
+ - [tsukaman](https://github.com/tsukaman)
