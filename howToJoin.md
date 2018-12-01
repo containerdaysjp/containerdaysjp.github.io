@@ -1,3 +1,5 @@
+![showKs logo](./images/showKs_logo.png)
+
 # showKsへの参加方法
 
 ## 1. 事前準備
@@ -6,50 +8,58 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ## 2. ユーザ名の登録
 
-まずshowKsへ参加するためのユーザ登録をします。
-
 [Project一覧](http://form.stg.showks.containerdays.jp/projects/)ページにアクセスし、既存の`Username`を確認します。  
 
-次に、画面下部の`Create Project`をクリックして[登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)に進みます。　
+![Project一覧](./images/projectList.png)
 
-[登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)では、次の情報を入力します。
+次に画面下部の`New Project`をクリックして[登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)に進みます。　
 
-![Image]()
+![Project作成](./images/newProject.png)
 
-- Username（必須） 
+登録フォームでは、次の情報を入力します。
+
+- **Username（必須）** 
     - showKsで使用するユーザ名です。
     - 既存のUsernameと重複しないようにしてください。
         - 重複した場合、既存データ等を上書きしますのでご注意ください。
     - このユーザ名を元にあなた専用のリポジトリが[Github](https://github.com/containerdaysjp)上に作成されます。
-- Github（必須） 
+- **Github（必須）** 
     - あなたのGithubアカウント名を入力してください。
     - このアカウントはお絵かきアプリからLinkされます。
     - 存在しないGithubアカウント名が指定された場合はエラーになります。
-- Twitter（必須） 
+- **Twitter（必須）** 
     - あなたのTwitterアカウント名を入力してください。
     - このアカウントはお絵かきアプリからLinkされます。
     - Twitterアカウントをお持ちでない場合は`containerdaysjp`を指定します。
-- Comment
+- **Comment**
     - 任意のメッセージを入力します。
     - このメッセージはお絵かきアプリに表示されます。
 
-入力後、 `Create Project` をクリックすることで新しいProjectが作成されます。作成完了までは暫く時間がかかります。画面が遷移し`Project was successfully create`の表示がでるまで待機してください。
+入力が完了したら`Create Project`をクリックしてProjectを新規作成します。処理の完了までは暫く時間がかかります。画面が遷移し`Project was successfully create`の表示がでるまで待機してください。
 
 ## 3. あなた専用リポジトリの確認
 
-ユーザ登録により、あなた専用のリポジトリが自動的に用意されます。
+ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。
 このリポジトリは、[showks-canvas](https://github.com/containerdaysjp/showks-canvas)からForkされたものです。
 
 [Github](https://github.com/containerdaysjp)へアクセスし、あなた専用のリポジトリが作成されていることを確認します。リポジトリ名は`showks-canvas-ユーザ名`で作成されています。検索機能がありますので活用してください。
+
+![専用リポジトリの検索](./images/searchRepository.png)
+
+## 4. あなた専用リポジトリ内のブランチの確認
 
 あなた専用のリポジトリには、次のブランチが用意されています。
 
 - staging
     - staging（ステージング）環境用のブランチです。
-    - 今回、stagingブランチには直接commitしてコードを更新します。
+    - 直接commitはせずに、featureブランチからPull Requestを発行してコードをmergeします。
 - master
     - production（本番）環境用のブランチです。
-    - 直接commitはせずに、stagingブランチからPull-Requestを発行してコードをmergeします。
+    - 直接commitはせずに、stagingブランチからPull Requestを発行してコードをmergeします。
+
+ここに開発用のブランチを追加します。今回は例として`feature`ブランチを新規作成します。
+
+あなた専用レポジトリにアクセスし、下図を参考に開発用ブランチを追加してください。
 
 
 ## 4. Staging環境のポータル画面にアクセス
