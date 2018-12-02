@@ -3,16 +3,16 @@
 # showKsへの参加方法（簡易版）
 
 1. Githubアカウントを準備
-2. [登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)からユーザ登録
+2. [登録フォーム](https://form.stg.showks.containerdays.jp/projects/new)からユーザ登録
 3. あなた専用レポジトリ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名`）にアクセス
 4. 開発用ブランチ（例：`feature`ブランチ）の作成
 5. 開発用ブランチの`src/data/author.json`ファイル内にある`comment`の値を編集してcommit
 6. 開発用ブランチから`staging`ブランチへPull Request
 7. `staging`ブランチへのPull Requestをmerge
-8. [staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+8. [staging環境用のポータル画面](https://portal.stg.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
 9. `staging`ブランチから`master`ブランチへPull Request
 10. `master`ブランチへのPull Requestをmerge
-11. [production環境用のポータル画面](http://portal.prod.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+11. [production環境用のポータル画面](https://portal.prod.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
 
 # showKsへの参加方法（詳細版）
 
@@ -22,11 +22,11 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ## 2. ユーザ登録
 
-[Project一覧](http://form.stg.showks.containerdays.jp/projects/)ページにアクセスし、既存の`Username`を確認します。  
+[Project一覧](https://form.stg.showks.containerdays.jp/projects/)ページにアクセスし、既存の`Username`を確認します。  
 
 ![Project一覧](./images/projectList.png)
 
-次に画面下部の`New Project`をクリックして[登録フォーム](http://form.stg.showks.containerdays.jp/projects/new)に進みます。　
+次に画面下部の`New Project`をクリックして[登録フォーム](https://form.stg.showks.containerdays.jp/projects/new)に進みます。　
 
 ![Project作成](./images/newProject.png)
 
@@ -115,7 +115,7 @@ showKsで事前に準備されているパイプライン管理から、mergeを
 
 ## 8. アプリ更新の確認（staging環境）
 
-[staging環境用のポータル画面](http://portal.stg.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
+[staging環境用のポータル画面](https://portal.stg.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
 
 デプロイされたCanvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間後にポータル画面にも反映されますので、確認してみてください。
 
@@ -134,4 +134,4 @@ showKsで事前に準備されているパイプライン管理から、mergeを
 
 ## 11. アプリ更新の確認（Production環境）
 
-[production環境用のポータル画面](http://portal.prod.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
+[production環境用のポータル画面](https://portal.prod.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
