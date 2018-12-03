@@ -135,6 +135,6 @@ showKsに関しては `#containerdaysjp`と `#showKs` の2つのハッシュタ�
 
 # ライセンス
 
-showKsプロジェクトで公開しているものは[showKs Canvasアプリ](#showKsCanvasアプリ)のみ[MIT license](https://opensource.org/licenses/MIT)で、残りは全て[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0)です。
+showKsプロジェクトで公開しているものは[showKs Canvasアプリ](#showKs Canvasアプリ)のみ[MIT license](https://opensource.org/licenses/MIT)で、残りは全て[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0)です。
 
 
