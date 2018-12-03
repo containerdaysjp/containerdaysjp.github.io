@@ -3,7 +3,7 @@
 # showKsへの参加方法（簡易版）
 
 1. Githubアカウントを準備
-2. [登録フォーム](https://form.showks.containerdays.jp/)からユーザ登録（ユーザ名は`小文字`と`数字`と`ｰ`のみ対応）
+2. [登録フォーム](https://form.showks.containerdays.jp/)からユーザ登録（ユーザ名は`小文字`と`数字`と`ｰ`のみ利用可）
 3. あなた専用レポジトリ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名`）にアクセス
 4. 開発用ブランチ（例：`feature`ブランチ）の作成
 5. 開発用ブランチの`src/data/author.json`ファイル内にある`comment`の値を編集してcommit
