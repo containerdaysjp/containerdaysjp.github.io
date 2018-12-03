@@ -1,6 +1,6 @@
 ![showKs logo](./images/showKs_logo.png)
-  
-   
+
+
 # showKsとは ｜ 趣旨
 
 日本最大級のコンテナ関連技術カンファレンスである[JapanContainerDays](https://containerdays.jp/)（通称”JKD”）。
@@ -8,7 +8,7 @@
 そこにはコンテナ技術に興味がある、あるいはコンテナ技術を愛している、もしくはコンテナ技術ってなんだかよく分からない・・・などなど、様々な人達がたくさん集まります。
 
 　「こんなにも面白い人達が集まるなら、なにか面白いデモができるのでは？」
- 
+
 JKDのスタッフミーティングで出てきたこんな発言をきっかけにスペシャルチームが結成されました。業務でバリバリにコンテナを技術を使っている凄腕エンジニアから、コンテナ業界を盛り上げているコミュニティの運営者まで、様々な組織の枠組みを超えて結束したまさに”ドリームチーム”が誕生したのです。
 
 　「kubernetes上で実際にアプリが動く環境を皆さんに見てもらいたい！」  
@@ -21,8 +21,8 @@ JKDのスタッフミーティングで出てきたこんな発言をきっか�
 このドリームチームに必要な最後の1ピースは**あなた**です。
 
 是非、ドリームチームに参加してクラウドネイティブな開発を体験してください。  
-  
-  
+
+
 # showKs構成
 
 showKsでは、お絵かきアプリ[showks-canvas](https://github.com/containerdaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます。
@@ -46,8 +46,8 @@ JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)の�
 9. ブラウザからCanvasアプリへアクセスし動作確認
 
 詳細な手順はこちらの[参加手順](#showKsへの参加方法)をご確認ください。
-  
-  
+
+
 ## showKs Canvasアプリ
 
 ![showks-canvas](./images/showks-canvas-sample.png)
@@ -63,8 +63,8 @@ JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)の�
 - 消しゴム機能
 
 showKs Canvasアプリのリポジトリは[こちら](https://github.com/containerdaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリからForkされたあなた専用のリポジトリが自動的に作成されます。
-  
-  
+
+
 ## showKs portal
 
 ![showks-portal](./images/showks-portal-sample.png)
@@ -74,9 +74,9 @@ showKs参加者がそれぞれデプロイしたアプリコンテナから、�
 また、showKsにはstaging（ステージング）とproduction（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
 
  - [staging環境用のポータル](https://portal.stg.showks.containerdays.jp)
- - [production環境用のポータル](https://portal.prod.showks.containerdays.jp)
-  
-  
+ - [production環境用のポータル](https://portal.showks.containerdays.jp)
+
+
 # 注意事項
 
 showKsの参加に際して、次の事項を遵守頂きますようご協力をお願いします。
@@ -85,20 +85,20 @@ showKsの参加に際して、次の事項を遵守頂きますようご協力�
 - Canvasアプリコンテナで公序良俗に反するコメントやイラストなどを表示させないでください。
   - Canvasアプリはインターネットへ公開される点にご留意ください。
   - [JKDのCode of Conduct（行動規範）](https://containerdays.jp/#event-slides)も併せてご一読ください。
-  
-  
+
+
 # showKsへの参加方法
 
 showKsへの参加手順は、[こちら](./howToJoin.md)をご参照ください。  
-  
-  
+
+
 # ドキュメント
 
 showKsで利用しているコンポーネントに関する情報は、次のドキュメントリポジトリに随時集約されます。
 
 - [showKs-docs](https://github.com/containerdaysjp/showks-docs)
-  
-  
+
+
 # 展示ブース
 
 JKD v18.12では、受付隣の1番ブースにおいてshowKsのデモ展示をしています。

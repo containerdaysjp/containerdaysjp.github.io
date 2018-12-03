@@ -28,16 +28,16 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 登録フォームでは、次の情報を入力します。
 
-- **Username（必須）** 
+- **Username（必須）**
     - showKsで使用するユーザ名です。
     - 既存のUsernameと重複しないようにしてください。
         - 重複した場合、既存データ等を上書きしますのでご注意ください。
     - このユーザ名を元にあなた専用のリポジトリが[Github](https://github.com/containerdaysjp)上に作成されます。
-- **Github（必須）** 
+- **Github（必須）**
     - あなたのGithubアカウント名を入力してください。
     - このアカウントはお絵かきアプリからLinkされます。
     - 存在しないGithubアカウント名が指定された場合はエラーになります。
-- **Twitter（必須）** 
+- **Twitter（必須）**
     - あなたのTwitterアカウント名を入力してください。
     - このアカウントはお絵かきアプリからLinkされます。
     - Twitterアカウントをお持ちでない場合は`containerdaysjp`を指定します。
@@ -130,4 +130,4 @@ showKsで事前に準備されているパイプライン管理から、mergeを
 
 ## 11. アプリ更新の確認（Production環境）
 
-[production環境用のポータル画面](https://portal.prod.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
+[production環境用のポータル画面](https://portal.showks.containerdays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
