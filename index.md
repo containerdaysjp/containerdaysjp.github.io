@@ -73,7 +73,7 @@ showKs参加者がそれぞれデプロイしたアプリコンテナから、�
 
 また、showKsにはstaging（ステージング）とproduction（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
 
- - [staging環境用のポータル](https://portal.showks.containerdays.jp)
+ - [staging環境用のポータル](https://portal.stg.showks.containerdays.jp)
  - [production環境用のポータル](https://portal.showks.containerdays.jp)
 
 
