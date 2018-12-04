@@ -51,14 +51,11 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ## 3. あなた専用レポジトリへのCollaborator inviteの受諾
 
-遷移後のページには、あなた専用の確認用リンクが表示されています。  
-このページをブックマークしておくと、後からConcourse CIやGithub Repositoryへアクセスしやすくなるのでオススメです。
+遷移後のページには、あなた専用の確認用リンクが表示されています。このページをブックマークしておくと、後からConcourse CIやGithub Repositoryへアクセスしやすくなるのでオススメです。
 
-ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。
-このリポジトリは、[showks-canvas](https://github.com/containerdaysjp/showks-canvas)からForkされたものです。
+ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。このリポジトリは、[showks-canvas](https://github.com/containerdaysjp/showks-canvas)からForkされたものです。
 
-あなた専用のリポジトリには初期状態では編集権限が設定されていません。
-あなた専用のリポジトリの作成後にGithubからCollaboratorへのInviteが自動で行われますのでこれを受諾します。
+あなた専用のリポジトリには初期状態では編集権限が設定されていません。あなた専用のリポジトリの作成後にGithubからCollaboratorへのInviteが自動で行われますのでこれを受諾します。
 
 処理手順の2.で最後に表示された画面にあるリンクから受諾画面へ遷移します。
 
