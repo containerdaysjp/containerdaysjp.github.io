@@ -4,14 +4,15 @@
 
 1. Githubアカウントを準備
 2. [登録フォーム](https://form.showks.containerdays.jp/)からユーザ登録（ユーザ名は`小文字`と`数字`と`ｰ`のみ利用可）
-3. あなた専用レポジトリ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名`）にアクセス
-4. 開発用ブランチ（`feature`ブランチ）の`src/data/author.json`ファイル内にある`comment`の値を編集してcommit
-5. 開発用ブランチ（`feature`ブランチ）から`staging`ブランチへPull Request
-6. `staging`ブランチへのPull Requestをmerge
-7. [staging環境用のポータル画面](https://portal.stg.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
-8. `staging`ブランチから`master`ブランチへPull Request
-9. `master`ブランチへのPull Requestをmerge
-10. [production環境用のポータル画面](https://portal.prod.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+3. あなた専用レポジトリへの`Collaborator invite`を受諾（`https://github.com/containerdaysjp/showks-canvas-ユーザ名/invitations`）
+4. あなた専用レポジトリ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名`）にアクセス
+5. 開発用ブランチ（`feature`ブランチ）の`src/data/author.json`ファイル内にある`comment`の値を編集してcommit
+6. 開発用ブランチ（`feature`ブランチ）から`staging`ブランチへPull Request
+7. `staging`ブランチへのPull Requestをmerge
+8. [staging環境用のポータル画面](https://portal.stg.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+9. `staging`ブランチから`master`ブランチへPull Request
+10. `master`ブランチへのPull Requestをmerge
+11. [production環境用のポータル画面](https://portal.prod.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
 
 # showKsへの参加方法（詳細版）
 
@@ -48,10 +49,26 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 処理の完了までは暫く時間がかかります。画面が遷移し`Project was successfully create`の表示がでるまで待機してください。
 
-## 3. あなた専用リポジトリの確認
+## 3. あなた専用レポジトリへのCollaborator inviteの受諾
+
+遷移後のページには、あなた専用の確認用リンクが表示されています。  
+このページをブックマークしておくと、後からConcourse CIやGithub Repositoryへアクセスしやすくなるのでオススメです。
 
 ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。
 このリポジトリは、[showks-canvas](https://github.com/containerdaysjp/showks-canvas)からForkされたものです。
+
+あなた専用のリポジトリには初期状態では編集権限が設定されていません。
+あなた専用のリポジトリの作成後にGithubからCollaboratorへのInviteが自動で行われますのでこれを受諾します。
+
+処理手順の2.で最後に表示された画面にあるリンクから受諾画面へ遷移します。
+
+![ユーザ登録処理の完了画面](project_created.png)
+
+この処理完了後の画面を閉じてしまった場合は、直接受諾ページ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名/invitations`）へアクセスしてください。
+
+![Invitationの受け入れ](accept_invitation.png)
+
+## 4. あなた専用リポジトリの確認
 
 [Github](https://github.com/containerdaysjp)へアクセスし、あなた専用のリポジトリが作成されていることを確認します。リポジトリ名は`showks-canvas-ユーザ名`で作成されています。検索機能がありますので活用してください。
 
