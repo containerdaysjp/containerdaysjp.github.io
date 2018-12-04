@@ -12,7 +12,7 @@
 8. [staging環境用のポータル画面](https://portal.stg.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
 9. `staging`ブランチから`master`ブランチへPull Request
 10. `master`ブランチへのPull Requestをmerge
-11. [production環境用のポータル画面](https://portal.prod.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+11. [production環境用のポータル画面](https://portal.showks.containerdays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
 
 # showKsへの参加方法（詳細版）
 
