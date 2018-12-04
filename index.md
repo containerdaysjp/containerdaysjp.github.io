@@ -22,6 +22,9 @@ JKDのスタッフミーティングで出てきたこんな発言をきっか�
 
 是非、ドリームチームに参加してクラウドネイティブな開発を体験してください。  
 
+# showKsへの参加方法
+
+showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照ください。  
 
 # showKs構成
 
@@ -45,8 +48,7 @@ JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)の�
 8. production環境へアプリコンテナが自動ビルド/デプロイ
 9. ブラウザからCanvasアプリへアクセスし動作確認
 
-詳細な手順はこちらの[参加手順](#showKsへの参加方法)をご確認ください。
-
+showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照ください。  
 
 ## showKs Canvasアプリ
 
@@ -85,12 +87,6 @@ showKsの参加に際して、次の事項を遵守頂きますようご協力�
 - Canvasアプリコンテナで公序良俗に反するコメントやイラストなどを表示させないでください。
   - Canvasアプリはインターネットへ公開される点にご留意ください。
   - [JKDのCode of Conduct（行動規範）](https://containerdays.jp/#event-slides)も併せてご一読ください。
-
-
-# showKsへの参加方法
-
-showKsへの参加手順は、[こちら](./howToJoin.md)をご参照ください。  
-
 
 # ドキュメント
 
