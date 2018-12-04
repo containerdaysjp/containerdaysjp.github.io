@@ -62,11 +62,11 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 処理手順の2.で最後に表示された画面にあるリンクから受諾画面へ遷移します。
 
-![ユーザ登録処理の完了画面](project_created.png)
+![ユーザ登録処理の完了画面](./imagesproject_created.png)
 
 この処理完了後の画面を閉じてしまった場合は、直接受諾ページ（`https://github.com/containerdaysjp/showks-canvas-ユーザ名/invitations`）へアクセスしてください。
 
-![Invitationの受け入れ](accept_invitation.png)
+![Invitationの受け入れ](./imagesaccept_invitation.png)
 
 ## 4. あなた専用リポジトリの確認
 
